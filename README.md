@@ -84,7 +84,7 @@ ip6tables -t nat -A POSTROUTING -s fd00:ea23:9c80:4a54:e242:5f97::/96 -j MASQUER
 目前已支持一键安装、更新（自动同步旧配置）、卸载面板以及备份数据库、添加超级管理员帐号、更换面板端口等操作。**使用一键脚本安装后，如果仍需使用一脚脚本更新，请勿更改数据库用户名和密码，否则会使得更新后无法同步更改后的数据库用户名和密码，导致数据库连接出错。**
 
 ```shell
-bash <(curl -fsSL https://raw.githubusercontent.com/Aurora-Admin-Panel/deploy/main/install.sh)
+bash <(curl -fsSL https://raw.githubusercontent.com/abcdvichko/deploy/main/install.sh)
 # 国内机器安装可以选择使用 fastgit 镜像
 # 但由于拉取 docker 镜像时候默认服务器仍在国外，可能拉取速度较慢
 # 可自行搜索如何配置 Docker Hub 国内镜像加速
